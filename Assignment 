@@ -1,0 +1,136 @@
+Assignment. 
+
+1. Area of a Rectangle
+
+function calculateArea(length, width) {
+    return length * width;
+}
+
+console.log(calculateArea(5, 10));
+
+console.log(calculateArea(7, 3));
+
+
+2. Greeting Message
+
+function greet(name) {
+    return `Hello, ${name}! Welcome.`;
+}
+
+
+console.log(greet("BabaUchay"));
+
+console.log(greet("Alice"))
+
+
+3. Sum of Numbers in an Array
+
+function sumNumbers(numbers) {
+    return numbers.reduce((sum, num) => sum + num, 0);
+}
+
+
+console.log(sumNumbers([1, 2, 3, 4, 5])); 
+
+console.log(sumNumbers([10, 20, 30]))
+
+
+
+4. Loops: Printing Numbers (1 to 10)
+
+Using a for loop:
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+Using a while loop:
+
+let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+
+5. Sum of Numbers in an Array Using Loops
+
+Using a for loop:
+
+function sumArrayForLoop(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+console.log(sumArrayForLoop([2, 4, 6, 8]))
+
+Using a while loop:
+
+function sumArrayWhileLoop(arr) {
+    let sum = 0;
+    let i = 0;
+    while (i < arr.length) {
+        sum += arr[i];
+        i++;
+    }
+    return sum;
+}
+
+console.log(sumArrayWhileLoop([1, 3, 5, 7]))
+
+
+6. Printing Elements of an Array Using Loops
+
+Using a for loop:
+
+function printArrayForLoop(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+
+printArrayForLoop(["apple", "banana", "cherry"]);
+
+Using a while loop:
+
+function printArrayWhileLoop(arr) {
+    let i = 0;
+    while (i < arr.length) {
+        console.log(arr[i]);
+        i++;
+    }
+}
+
+printArrayWhileLoop(["dog", "cat", "rabbit"]);
+
+
+7. Even or Odd Number
+
+function isEvenOrOdd(number) {
+    return number % 2 === 0 ? "Even" : "Odd";
+}
+
+
+console.log(isEvenOrOdd(7)); 
+
+console.log(isEvenOrOdd(12));
+
+
+8. Grade Calculator
+
+function getGrade(score) {
+    if (score >= 90) return "A";
+    else if (score >= 80) return "B";
+    else if (score >= 70) return "C";
+    else if (score >= 60) return "D";
+    else return "F";
+}
+
+console.log(getGrade(95));
+console.log(getGrade(72)); 
+console.log(getGrade(50)); 
+
+
